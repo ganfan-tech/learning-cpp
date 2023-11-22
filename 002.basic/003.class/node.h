@@ -5,10 +5,12 @@ class Node
 {
 
 public:
-  Node(){};
-  explicit Node(int value);
+  Node();
+  Node(int value);
+  Node(Node &node);
+  // explicit Node(int value);
   ~Node();
-  int get_val();
+  int get_val() const;
   void set_val(int);
 
 private:
